@@ -1,0 +1,75 @@
+@import "_config.scss";
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: $blue;
+    color: $white;
+    height: 70px;
+
+    .logo {
+        position: absolute;
+        top: 50%; left: 35px;
+        @include translateY(-50%);
+
+        a{
+            color:$white;
+            font-size:22px;
+
+            &:hover {
+                text-decoration: none;
+                color: $orange;
+                @include transition(.4s ease-in-out);
+            }
+        
+            &:focus {
+                text-decoration: none;
+                color: $black;
+                @include transition(.4s ease-in-out);
+            }
+        }
+    }
+
+    nav,
+    nav ul,
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        position: absolute;
+        font-family: 'Barlow Condensed', sans-serif;
+        top: 50%; right: 40px;
+        @include translateY(-50%);
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 20px;
+        
+        &.last {
+            margin: 0;
+        }
+        
+        a {
+            font-size: 20px;
+            line-height: normal;
+            color: $white;
+            }
+
+
+
+
+
+
+        }
+
+    }
+
+
+
+
+
+}

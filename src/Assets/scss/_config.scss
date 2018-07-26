@@ -1,0 +1,73 @@
+/*
+Vars
+*/
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+$blue: #041E42;
+$orange: #FC4C02;
+
+
+
+/*
+Mixins
+*/
+
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+        -moz-transform: translateY($e);
+            transform: translateY($e);
+}
+
+@mixin transition($e) {
+        -webkit-transition:$e;
+            -moz-transition:$e;
+                transition:$e;
+}
+
+/* Fonts -
+
+regular 400
+regular 300 Italic
+bold 700
+bold 700 Italic
+
+*/
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 14px;
+    color: $black;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        color: $orange;
+        @include transition(.4s ease-in-out);
+    }
+
+    &:focus {
+        text-decoration: none;
+        color: $black;
+        @include transition(.4s ease-in-out);
+    }
+    &:active {
+        text-decoration: none;
+        color: $orange;
+    }
+
+}
+
+.container-fluid{
+    line-height: 24px;
+}
+
