@@ -11,9 +11,12 @@
     "gulp-uglify": "^3.0.1",
     "hoek": "^5.0.3",
     "react": "^16.4.1",
+    "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.4.1",
+    "react-filterable-table": "^0.3.428",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-table": "^6.8.6"
   },
   "scripts": {
     "start": "react-scripts start",

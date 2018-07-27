@@ -6,11 +6,11 @@ class playerStats extends Component {
         <div className='container-fluid'>
 
           <h1>
-              Player Stats
+              Salary
         </h1>
 
         <p>
-          Insert table here
+        Insert Salary Table here
         </p>
 
 
