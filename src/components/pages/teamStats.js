@@ -16,7 +16,7 @@ function addProducts(quantity) {
   }
 }
 
-addProducts(5);
+addProducts(10);
 
 
 class teamStats extends Component {
@@ -38,11 +38,13 @@ class teamStats extends Component {
 
   render () {
     return (
+      <div>
       <BootstrapTable data={ this.state.ecsData }>
           <TableHeaderColumn dataField='id' isKey={ true }>Product ID</TableHeaderColumn>
           <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
           <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
         </BootstrapTable>
+        </div>
     );
   }
 }
